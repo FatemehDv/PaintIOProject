@@ -9,11 +9,14 @@ import org.example.KeyHandler;
 public class Player extends Entity {
     GamePanel gamePanel;
     KeyHandler keyHandler;
+    //public final int screenX;
+    //public final int screenY;
     public Player(GamePanel gamePanel, KeyHandler keyHandler){
         this.gamePanel = gamePanel;
         this.keyHandler = keyHandler;
+        //screenX = gamePanel.screenWidth / 2 - (gamePanel.tileSize /2);
+        //screenY = gamePanel.screenHeight / 2 - (gamePanel.tileSize /2);
         setDefaultValues();
-
     }
     public void setDefaultValues(){
         x = 400;
